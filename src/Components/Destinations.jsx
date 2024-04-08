@@ -15,7 +15,7 @@ import d12 from '../assets/202.jpg'
 
 function Destinations() {
   return (
-    <div className='w-full h bg-zinc-900 -mt-16'>
+    <div className='w-full h bg-zinc-900 -mt-[2.5vw]'>
       <div className='flex justify-center'>
         <img className='pt-3' src={discover}/>
       </div>

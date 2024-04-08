@@ -55,7 +55,7 @@ function Landing() {
           <div style={{backgroundImage: `url(${slides[currIndex].url})`}} className={`w-full h-full bg-center bg-cover duration-1000 ease-in-out ${currIndex === 0 && "bg-top"}`}>
 
           <div className='w-full z-[999] h-screen bg-transparent pt-1'>
-              <div className='textstructure mt-[17vw] px-[5.5vw]'>
+              <div className='textstructure mt-[15vw] px-[5.5vw]'>
               {["Plan it to"].map((item,index)=> {
                   return <div className='masker'>
                   <h2 
@@ -81,7 +81,7 @@ function Landing() {
                   </div>
               })}
               </div>
-              <div className='flex justify-center items-end h-1/2'>
+              <div className='flex justify-center items-end h-1/2 mt-[3.5vw]'>
                 <div className=' z-[990] bg-slate-100 w-2/3 h-3/4 rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
@@ -97,7 +97,7 @@ function Landing() {
                    <div class='anime start-home'></div>
                  <div className='w-full align-bottom bg-gray-200 h-1 -mt-[0.25vw]'></div>
                </div>
-               <div className='flex justify-center items-end mt-[8vw]'>
+               <div className='flex justify-center items-end mt-[7vw]'>
                 <div className='w-12 h-12 bg-slate-100 z-[991] rounded-full flex justify-center items-center shadow-lg'>
                   <div className='w-9 h-9 bg-[#A4161A] rounded-full'></div>
                 </div>
@@ -105,7 +105,7 @@ function Landing() {
                </div>
                 </div>
               </div>
-              <div className='w-full flex h-1/4 -mt-[12vw]'>
+              <div className='w-full flex h-1/4 -mt-[10.5vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>

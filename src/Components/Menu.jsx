@@ -14,7 +14,7 @@ import ten from '../assets/10.png'
 import eleven from '../assets/12.png'
 function Menu() {
   return (
-    <div className='h-screen w-full mt-[16vw] ml-[7vw]'>
+    <div className='h-screen w-full mt-[14vw] ml-[7vw]'>
         <div className='mt-14 w-[85vw] h-[17vw] bg-gray-200 shadow-xl shadow-[#1E1E1E30] rounded-3xl'>
          <div className='flex justify-center'>
            <img className='pt-4' src={book}></img>
@@ -62,7 +62,7 @@ function Menu() {
            </div>
          </div>
         </div>
-        <div className='mt-10 ml-[10vw] w-[65vw] h-[17vw] bg-gray-200 shadow-xl shadow-[#1E1E1E30] rounded-3xl'>
+        <div className='mt-[2.5vw] ml-[10vw] w-[65vw] h-[17vw] bg-gray-200 shadow-xl shadow-[#1E1E1E30] rounded-3xl'>
          <div className='flex justify-center'>
            <img className='pt-4' src={check}></img>
          </div>
