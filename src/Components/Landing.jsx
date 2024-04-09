@@ -81,7 +81,7 @@ function Landing() {
                   </div>
               })}
               </div>
-              <div className='flex justify-center items-end h-1/2 mt-[3.5vw]'>
+              <div className='flex justify-center items-end h-1/2 xl:mt-[3.5vw] lg:mt-[7vw]'>
                 <div className=' z-[990] bg-slate-100 w-2/3 h-3/4 rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
@@ -105,7 +105,7 @@ function Landing() {
                </div>
                 </div>
               </div>
-              <div className='w-full flex h-1/4 -mt-[10.5vw]'>
+              <div className='w-full flex h-1/4 xl:-mt-[10.5vw] lg:-mt-[12.5vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>

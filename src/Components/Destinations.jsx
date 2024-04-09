@@ -15,12 +15,12 @@ import d12 from '../assets/202.jpg'
 
 function Destinations() {
   return (
-    <div className='w-full h bg-zinc-900 -mt-[2.5vw]'>
+    <div className='w-full h bg-zinc-900 xl:-mt-[2.5vw] lg:-mt-[6.5vw]'>
       <div className='flex justify-center'>
         <img className='pt-3' src={discover}/>
       </div>
       <div className='md:p-8'>
-      <div className='columns-1 gap-3 lg:gap-4 sm:columns-2 lg:columns-4 xl:columns-5 [&>img: not(:first-child)]:mt-8 lg:[&>img:not(:first-child)]:mt-4'>
+      <div className='columns-1 gap-3 lg:gap-4 sm:columns-2 lg:columns-4 xl:columns-4 [&>img: not(:first-child)]:mt-8 lg:[&>img:not(:first-child)]:mt-4'>
          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow ">
           <div class=" h-[24vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d1} alt="" />
