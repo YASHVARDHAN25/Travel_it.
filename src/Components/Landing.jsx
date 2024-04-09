@@ -97,7 +97,7 @@ function Landing() {
                    <div class='anime start-home'></div>
                  <div className='w-full align-bottom bg-gray-200 h-1 -mt-[0.25vw]'></div>
                </div>
-               <div className='flex justify-center items-end mt-[7vw]'>
+               <div className='flex justify-center items-end xl:mt-[7vw] lg:mt-[8vw]'>
                 <div className='w-12 h-12 bg-slate-100 z-[991] rounded-full flex justify-center items-center shadow-lg'>
                   <div className='w-9 h-9 bg-[#A4161A] rounded-full'></div>
                 </div>
