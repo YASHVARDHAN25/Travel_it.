@@ -4,8 +4,12 @@ import img1 from '../assets/planit.svg'
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import Marquee from "react-fast-marquee";
 import './Landing.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Landing() {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
   const [count, setCount] = useState(0)
   const [autoslide, setAutoSlide] = useState(true)
   const [interval, setInterval] = useState(3000)
@@ -82,7 +86,7 @@ function Landing() {
               })}
               </div>
               <div className='flex justify-center items-end h-1/2 xl:mt-[3.5vw] lg:mt-[7vw]'>
-                <div className=' z-[990] bg-slate-100 w-2/3 h-3/4 rounded-3xl shadow-2xl'>
+                <div className=' z-[990] bg-slate-100 w-2/3 h-[18vw] rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
                 <img className=' w-30 pt-3' src={img1}></img>
@@ -97,7 +101,7 @@ function Landing() {
                    <div class='anime start-home'></div>
                  <div className='w-full align-bottom bg-gray-200 h-1 -mt-[0.25vw]'></div>
                </div>
-               <div className='flex justify-center items-end xl:mt-[7vw] lg:mt-[8vw]'>
+               <div className='flex justify-center items-end xl:mt-[9vw] lg:mt-[9vw]'>
                 <div className='w-12 h-12 bg-slate-100 z-[991] rounded-full flex justify-center items-center shadow-lg'>
                   <div className='w-9 h-9 bg-[#A4161A] rounded-full'></div>
                 </div>

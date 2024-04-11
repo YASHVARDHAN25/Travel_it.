@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import discover from '../assets/discoverit.svg'
 import d1 from '../assets/111.jpg'
 import d2 from '../assets/112.jpg'
@@ -12,17 +12,22 @@ import d9 from '../assets/119.jpg'
 import d10 from '../assets/200.jpg'
 import d11 from '../assets/201.jpg'
 import d12 from '../assets/202.jpg'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Destinations() {
+  useEffect(() => {
+    AOS.init({duration: 1000,
+    easing: 'slide-up'});
+  }, []);
   return (
-    <div className='w-full h bg-zinc-900 xl:-mt-[2.5vw] lg:-mt-[6.5vw]'>
+    <div data-aos="fade-up" data-aos-speed="1.2" className='w-full bg-zinc-900 xl:-mt-[4.5vw] lg:-mt-[8.5vw]'>
       <div className='flex justify-center'>
         <img className='pt-3' src={discover}/>
       </div>
       <div className='md:p-8'>
       <div className='columns-1 gap-3 lg:gap-4 sm:columns-2 lg:columns-4 xl:columns-4 [&>img: not(:first-child)]:mt-8 lg:[&>img:not(:first-child)]:mt-4'>
          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow ">
-          <div class=" h-[24vw]">
+          <div class=" h-[31vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d1} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -36,7 +41,7 @@ function Destinations() {
           </div>
          </div>
          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4 ">
-          <div class=" h-[25vw]">
+          <div class=" h-[24vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d2} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -50,7 +55,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4 ">
-          <div class=" h-[29vw]">
+          <div class=" h-[31vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d3} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -64,7 +69,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-[29vw]">
+          <div class=" h-[27vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d4} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -78,7 +83,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-[27vw]">
+          <div class=" h-[31vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d5} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -92,7 +97,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow  mt-4">
-          <div class=" h-[30vw]">
+          <div class=" h-[28vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d6} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -106,7 +111,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow  mt-4">
-          <div class=" h-[25vw]">
+          <div class=" h-[31vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d7} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -120,8 +125,8 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-[26vw]">
-           <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d8} alt="" />
+          <div class=" h-[24vw]">
+           <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d9} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
              group-hover:from-[#1E1E1E] group-hover:via-[#1E1E1E80] group-hover:to-[#1E1E1E]">
@@ -134,8 +139,8 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-96">
-           <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d9} alt="" />
+          <div class=" h-[31vw]">
+           <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d8} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
              group-hover:from-[#1E1E1E] group-hover:via-[#1E1E1E80] group-hover:to-[#1E1E1E]">
@@ -148,7 +153,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-[30vw]">
+          <div class=" h-[27vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d10} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
@@ -162,7 +167,7 @@ function Destinations() {
           </div>
         </div>
         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow mt-4">
-          <div class=" h-[27vw]">
+          <div class=" h-[31vw]">
            <img class=" absolute h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src={d11} alt="" />
            <div class="absolute inset-0 bg-gradient-to-b 
              from-transparent via-transparent to-[#1E1E1E] 
