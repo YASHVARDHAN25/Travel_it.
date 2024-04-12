@@ -10,7 +10,7 @@ function Navbar() {
            <button className=''>HOME</button>
            <button className=''>EXPLORE</button>
            <button className=''>OFFERS</button>
-           <button className=''>WISH</button>
+           <button className=''>WISHLIST</button>
         </div>
         <div className='login'>
             <button className=' bg-zinc-900 px-6 text-xl py-3 rounded-full'>

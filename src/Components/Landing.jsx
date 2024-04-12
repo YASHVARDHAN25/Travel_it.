@@ -1,11 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import img1 from '../assets/planit.svg'
-import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Marquee from "react-fast-marquee";
+
+import img1 from '../assets/planit.svg'
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import {Autoplay} from 'swiper/modules';
 import './Landing.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Swipes from './Swipes';
 function Landing() {
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -15,51 +22,15 @@ function Landing() {
   const [interval, setInterval] = useState(3000)
   const place = new String('LADAKH.');  
   const place1 = place.substring(0, place.length-1)
-
-  useEffect(() =>{
-    if(!autoslide) return
-    const slideInterval = setInterval(nextSlide, interval)
-    return ()=> clearInterval(slideInterval)
-  }, [])
-      const slides =[
-        {
-          url: 'https://images.unsplash.com/photo-1573106341805-7db29def6c9d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-         },
-         {
-          url: 'https://images.unsplash.com/photo-1592548890095-cd2a7aeca5ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-         },
-         {
-          url: 'https://images.unsplash.com/photo-1562979314-bee7453e911c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-         },
-         {
-          url: 'https://images.unsplash.com/photo-1709338573277-c161cbf8702c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-         },
-         {
-          url: 'https://images.unsplash.com/photo-1590999227544-affea8fb69ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-         }
-      ]
-      const [currIndex, setCurrIndex] = useState(0)
-
-      const prevSlide =() =>{
-        const isFirstSlide = currIndex === 0 ;
-        const newIndex = isFirstSlide ? slides.length - 1 : currIndex - 1;
-        setCurrIndex(newIndex);  
-      }
-      const nextSlide =() =>{
-        const isLastSlide = currIndex === slides.length-1 ;
-        const newIndex = isLastSlide ? 0 : currIndex + 1;
-        setCurrIndex(newIndex);  
-
-
-      }
       return (
-        
-        <div className='w-screen h-screen m-auto  relative group'>     
-        
-          <div style={{backgroundImage: `url(${slides[currIndex].url})`}} className={`w-full h-full bg-center bg-cover duration-1000 ease-in-out ${currIndex === 0 && "bg-top"}`}>
-
-          <div className='w-full z-[999] h-screen bg-transparent pt-1'>
-              <div className='textstructure mt-[15vw] px-[5.5vw]'>
+        <>
+        <div className='absolute'>
+         <Swipes/>
+         </div>
+        <div className='w-screen h-screen m-auto group'>   
+      
+          <div className='w-full z-[990] h-screen bg-transparent pt-1 absolute'>
+              <div className='textstructure xl:mt-[13vw] lg:mt-[15vw] px-[5.5vw]'>
               {["Plan it to"].map((item,index)=> {
                   return <div className='masker'>
                   <h2 
@@ -85,7 +56,7 @@ function Landing() {
                   </div>
               })}
               </div>
-              <div className='flex justify-center items-end h-1/2 xl:mt-[3.5vw] lg:mt-[7vw]'>
+              <div className='flex justify-center items-end h-1/2 xl:mt-[7vw] lg:mt-[7vw]'>
                 <div className=' z-[990] bg-slate-100 w-2/3 h-[18vw] rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
@@ -98,7 +69,7 @@ function Landing() {
                    <a href='#'>NO.OF PEOPLE</a>
                    <a href='#'>BUDGET</a>
                    <a href='#'>TYPE OF TRANSPORT</a>
-                   <div class='anime start-home'></div>
+                   <div className='anime start-home'></div>
                  <div className='w-full align-bottom bg-gray-200 h-1 -mt-[0.25vw]'></div>
                </div>
                <div className='flex justify-center items-end xl:mt-[9vw] lg:mt-[9vw]'>
@@ -109,7 +80,7 @@ function Landing() {
                </div>
                 </div>
               </div>
-              <div className='w-full flex h-1/4 xl:-mt-[10.5vw] lg:-mt-[12.5vw]'>
+              <div className='w-full flex h-1/4 xl:-mt-[11.5vw] lg:-mt-[11.5vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>
@@ -138,20 +109,11 @@ function Landing() {
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>UDAIPUR</div>
                 </Marquee>
-
               </div>
           </div>
-
-          </div>
-          <div className='hidden group-hover:block absolute top-[50%] translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-            <BsChevronCompactLeft onClick={prevSlide} size={30} />
-          </div>
-          <div className='hidden group-hover:block absolute top-[50%] translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-            <BsChevronCompactRight onClick={nextSlide} size={30} />
-          </div>
-
-        </div>
-
+          </div>  
+        
+</>
         )
       }
 export default Landing
