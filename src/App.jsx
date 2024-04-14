@@ -5,6 +5,7 @@ import Menu from './Components/Menu'
 import Destinations from './Components/Destinations'
 import LocomotiveScroll from 'locomotive-scroll';
 import Sliders from './Components/Sliders'
+import SecondSliders from './Components/SecondSliders';
 
 function App() {
 const locomotiveScroll = new LocomotiveScroll();
@@ -16,6 +17,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <Menu />
       <Destinations />
       <Sliders />
+      <SecondSliders />
     </div>
   )
 }

@@ -18,9 +18,9 @@ import './Sliders.css';
 // import required modules
 import {Autoplay, EffectCoverflow} from 'swiper/modules';
 
-function Sliders() {
+function SecondSliders() {
   return (
-    <div className='w-full bg-zinc-900 swiper-container relative py-[4vw] h-1/2'>
+    <div className='w-full bg-zinc-900 swiper-container relative py-[3vw] h-1/2'>
       <div className='flex gap-[0.8vw]'>
       <div className=' font-sans text-2xl font-bold text-white pl-[2.5vw] pb-[2vw]'>BEST PLACES</div>
       <div className=' font-sans text-2xl font-extrabold text-[#A4161A] pb-[2vw]'> APR-MAY :</div>
@@ -80,5 +80,5 @@ function Sliders() {
   )
 }
 
-export default Sliders
+export default SecondSliders
 

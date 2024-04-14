@@ -25,7 +25,7 @@ function Landing() {
       return (
         <>
         <div className='absolute'>
-         <Swipes/>
+        <Swipes/>
          </div>
         <div className='w-screen h-screen m-auto group'>   
       
@@ -35,7 +35,7 @@ function Landing() {
                   return <div className='masker'>
                   <h2 
                   key={index} 
-                  className={`leading-[6vw] tracking-tight font-extrabold font-sans 
+                  className={`leading-[6vw] tracking-tight font-extrabold font-sans
                   ${index === 0 && " text-[#1E1E1E50] text-[5vw]"}`}
                   >
                     {item}

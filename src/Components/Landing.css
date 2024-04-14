@@ -48,11 +48,11 @@ a:nth-child(4):hover ~ .anime {
   left: 504px;
 }
 a:nth-child(5) {
-  width: 198px;
+  width: 194px;
 }
 .start-home,
 a:nth-child(5):hover ~ .anime {
-  width: 198px;
+  width: 194px;
   left: 640px;
 }
 
