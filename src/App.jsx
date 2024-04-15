@@ -6,18 +6,20 @@ import Destinations from './Components/Destinations'
 import LocomotiveScroll from 'locomotive-scroll';
 import Sliders from './Components/Sliders'
 import SecondSliders from './Components/SecondSliders';
+import Cards from './Components/Cards';
 
 function App() {
 const locomotiveScroll = new LocomotiveScroll();
   const [count, setCount] = useState(0)
   return (
-    <div className='w-full min-h-screen text-white'>
+    <div className='w-full min-h-screen text-white overflow-hidden'>
       <Navbar />
       <Landing />
       <Menu />
       <Destinations />
       <Sliders />
       <SecondSliders />
+      <Cards />
     </div>
   )
 }
