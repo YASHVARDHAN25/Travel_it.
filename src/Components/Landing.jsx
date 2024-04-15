@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Marquee from "react-fast-marquee";
 
 import img1 from '../assets/planit.svg'
-
+import './Flipper.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -31,32 +31,33 @@ function Landing() {
       
           <div className='w-full z-[990] h-screen bg-transparent pt-1 absolute'>
               <div className='textstructure xl:mt-[13vw] lg:mt-[15vw] px-[5.5vw]'>
-              {["Plan it to"].map((item,index)=> {
-                  return <div className='masker'>
-                  <h2 
-                  key={index} 
-                  className={`leading-[6vw] tracking-tight font-extrabold font-sans
-                  ${index === 0 && " text-[#1E1E1E50] text-[5vw]"}`}
-                  >
-                    {item}
-                  </h2>
-                  </div>
-              })}
-              {[place1].map((item,index)=> {
-                  return <div className='masker2 flex gap-2'>
-                  <h2 
-                  key={index} 
-                  className={`leading-[6vw] tracking-tight font-black font-sans 
-                  ${index === 0 && " text-[#1E1E1E] text-[5vw]"}
-                  ${index === 1 && " "}`}
-                  >
-                  {item}
-                  </h2>
-                  <h2 className='leading-[6vw] tracking-tight text-[#A4161A] text-[5vw] font-black font-sans'>.</h2>
-                  </div>
-              })}
+              <div className='plan font-sans font-extrabold text-[5vw]'>Plan it to</div>
+    <div className='wrapper mr-[2vw]'>
+      <div className='words font-sans font-black text-[5vw] -mt-[1.5vw]'>
+        <span className='flex'>
+          <div className='font-extrabold'>LADAKH</div>
+          <div className='text-[#A4161A] font-extrabold'>.</div>
+          </span>
+          <span className='flex'>
+          <div className='font-extrabold'>MUMBAI</div>
+          <div className='text-[#A4161A] font-extrabold'>.</div>
+          </span>        
+          <span className='flex'>
+          <div className='font-extrabold'>GOA</div>
+          <div className='text-[#A4161A] font-extrabold'>.</div>
+          </span>        
+          <span className='flex'>
+          <div className='font-extrabold'>DELHI</div>
+          <div className='text-[#A4161A] font-extrabold'>.</div>
+          </span>        
+          <span className='flex'>
+          <div className='font-extrabold'>HYDERABAD</div>
+          <div className='text-[#A4161A] font-extrabold'>.</div>
+          </span>
+      </div>
+    </div>
               </div>
-              <div className='flex justify-center items-end h-1/2 xl:mt-[7vw] lg:mt-[7vw]'>
+              <div className='flex justify-center items-end h-1/2 xl:mt-[5.5vw] lg:mt-[5.5vw]'>
                 <div className=' z-[990] bg-slate-100 w-2/3 h-[18vw] rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>

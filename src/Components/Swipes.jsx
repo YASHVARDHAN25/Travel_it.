@@ -24,7 +24,7 @@ const Swipes = () => {
 <div className='w-screen h-screen'>
           <Swiper spaceBetween={0} centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}

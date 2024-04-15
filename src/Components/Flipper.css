@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+.plan{
+  color: #1E1E1E50;
+}
+body{
+  background-color: #ffffff;
+  height: 100vh;
+}
+.wrapper{
+  box-sizing: content-box;
+  background-color: #ffffff0;
+  height: 80px;
+  display: flex;
+  box-shadow: 0 20px 25px rgba(0,0,0,0,2);
+}
+.words{
+  overflow: hidden;
+}
+span{
+  display: block;
+  height: 100%;
+  color: #1E1E1E;
+  animation: spin_words 13s infinite;
+}
+@keyframes spin_words{
+  10%{
+    transform: translateY(-112%);
+  }
+  25%{
+    transform: translateY(-100%);
+  }
+  35%{
+    transform: translateY(-212%);
+  }
+  50%{
+    transform: translateY(-200%);
+  }
+  60%{
+    transform: translateY(-312%);
+  }
+  75%{
+    transform: translateY(-300%);
+  }
+  85%{
+    transform: translateY(-412%);
+  }
+  100%{
+    transform: translateY(-400%);
+  }
+}
+
