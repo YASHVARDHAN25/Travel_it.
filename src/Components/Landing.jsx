@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Marquee from "react-fast-marquee";
 
 import img1 from '../assets/planit.svg'
-import './Flipper.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -31,29 +30,67 @@ function Landing() {
       
           <div className='w-full z-[990] h-screen bg-transparent pt-1 absolute'>
               <div className='textstructure xl:mt-[13vw] lg:mt-[15vw] px-[5.5vw]'>
-              <div className='plan font-sans font-extrabold text-[5vw]'>Plan it to</div>
+              <div className='plan font-sans font-extrabold text-[5vw] text-[#1E1E1E70]'>Plan it to</div>
     <div className='wrapper mr-[2vw]'>
-      <div className='words font-sans font-black text-[5vw] -mt-[1.5vw]'>
-        <span className='flex'>
-          <div className='font-extrabold'>LADAKH</div>
-          <div className='text-[#A4161A] font-extrabold'>.</div>
+      <div className='words font-sans -mt-[1.5vw] h-20 w-[40vw]'>
+      <Swiper spaceBetween={0} direction={'vertical'}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className='names overflow-hidden flex items-start '
+      >
+        <SwiperSlide className='name flex justify-start items-start bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>LADAKH</div>
+          <div className='text-[#A4161A]'>.</div>
           </span>
-          <span className='flex'>
-          <div className='font-extrabold'>MUMBAI</div>
-          <div className='text-[#A4161A] font-extrabold'>.</div>
-          </span>        
-          <span className='flex'>
-          <div className='font-extrabold'>GOA</div>
-          <div className='text-[#A4161A] font-extrabold'>.</div>
-          </span>        
-          <span className='flex'>
-          <div className='font-extrabold'>DELHI</div>
-          <div className='text-[#A4161A] font-extrabold'>.</div>
-          </span>        
-          <span className='flex'>
-          <div className='font-extrabold'>HYDERABAD</div>
-          <div className='text-[#A4161A] font-extrabold'>.</div>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>MUMBAI</div>
+          <div className='text-[#A4161A]'>.</div>
           </span>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>GOA</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>HYDERABAD</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>DELHI</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>AGRA</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>JAIPUR</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span> 
+        </SwiperSlide>
+        <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
+          <span className='flex font-black text-[5vw]'>
+          <div className=' text-[#1E1E1E]'>JAIPUR</div>
+          <div className='text-[#A4161A]'>.</div>
+          </span> 
+        </SwiperSlide>
+      </Swiper>
+      
       </div>
     </div>
               </div>
