@@ -52,4 +52,4 @@ const Starting = () => {
   </>
   )
 }
-export default starting
+export default Starting
