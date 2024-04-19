@@ -90,7 +90,6 @@ function Landing() {
           </span> 
         </SwiperSlide>
       </Swiper>
-      
       </div>
     </div>
               </div>
