@@ -9,7 +9,7 @@ function Navbar() {
         <div className='logo'> 
           <img className='w-11 cursor-pointer' src={image}></img>
         </div>
-        <div className={`md:static absolute md:min-h-fit min-h-[40vh] w-full rounded-xl bg-[#ffffff30] md:bg-transparent left-0 md:w-auto md:z-auto z-[-10] flex items-center px-5 transition-all ease-in ${open ? 'top-[100%]': 'top-[-550%]'}`}>
+        <div className={`md:static absolute md:min-h-fit min-h-[40vh] w-full rounded-xl bg-[#ffffff30] md:bg-transparent left-0 md:w-auto md:z-auto z-[-10] flex items-center px-5 transition-all ease-in ${open ? 'top-[100%]': 'top-[-750%]'}`}>
         <ul className=' links flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6 text-zinc-900 font-semibold tracking-tighter '>
            <li><button className=' hover:text-[#A4161A]'>HOME</button></li>
            <li><button className=' hover:text-[#A4161A]'>EXPLORE</button></li>
