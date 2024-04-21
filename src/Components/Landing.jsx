@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Marquee from "react-fast-marquee";
-
+import Start from './Start';
 import img1 from '../assets/planit.svg'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -23,16 +23,17 @@ function Landing() {
   const place1 = place.substring(0, place.length-1)
       return (
         <>
+        
         <div className='absolute'>
         <Swipes/>
          </div>
         <div className='w-screen h-screen m-auto group'>   
       
           <div className='w-full z-[990] h-screen bg-transparent pt-1 absolute'>
-              <div className='textstructure xl:mt-[13vw] lg:mt-[15vw] px-[5.5vw]'>
-              <div className='plan font-sans font-extrabold text-[5vw] text-[#1E1E1E70]'>Plan it to</div>
+              <div className='textstructure xl:mt-[13vw] sm:mt-[15vw] mt-[25vw] px-[5.5vw]'>
+              <div className='plan font-sans font-extrabold sm:text-[5vw] text-[10vw] text-[#1E1E1E70]'>Plan it to</div>
     <div className='wrapper mr-[2vw]'>
-      <div className='words font-sans -mt-[1.5vw] h-20 w-[40vw]'>
+      <div className='words font-sans -mt-[1.5vw] h-20 w-[80vw]'>
       <Swiper spaceBetween={0} direction={'vertical'}
         autoplay={{
           delay: 3000,
@@ -42,49 +43,49 @@ function Landing() {
         className='names overflow-hidden flex items-start '
       >
         <SwiperSlide className='name flex justify-start items-start bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>LADAKH</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>MUMBAI</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>GOA</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>HYDERABAD</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>DELHI</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>AGRA</div>
           <div className='text-[#A4161A]'>.</div>
           </span>
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>JAIPUR</div>
           <div className='text-[#A4161A]'>.</div>
           </span> 
         </SwiperSlide>
         <SwiperSlide className='name flex justify-start items-start  bg-transparent'>
-          <span className='flex font-black text-[5vw]'>
+          <span className='flex font-black sm:text-[5vw] text-[10vw]'>
           <div className=' text-[#1E1E1E]'>JAIPUR</div>
           <div className='text-[#A4161A]'>.</div>
           </span> 
@@ -93,12 +94,13 @@ function Landing() {
       </div>
     </div>
               </div>
-              <div className='flex justify-center items-end h-1/2 xl:mt-[5.5vw] lg:mt-[5.5vw]'>
-                <div className=' z-[990] bg-slate-100 w-2/3 h-[18vw] rounded-3xl shadow-2xl'>
+              <div className='flex justify-center items-end h-1/2 md:mt-[12vw] lg:mt-[6vw] sm:mt-[20vw]'>
+                <div className=' z-[990] bg-slate-100 sm:w-2/3 w-5/6 lg:h-[18vw] md:h-[20vw]  rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
-                <img className=' w-30 pt-3' src={img1}></img>
+                <img className=' md:w-[12vw] w-[20vw] pt-3' src={img1}></img>
                 </div>
+                {/*
                 <div className=' w-full h-screen'>
                  <div className='font-sans text-[1.1vw] font-bold relative mt-1 h-9 inline-block'>
                    <a href='#'>DESTINATION</a>
@@ -114,10 +116,10 @@ function Landing() {
                   <div className='w-9 h-9 bg-[#A4161A] rounded-full'></div>
                 </div>
                </div>
-               </div>
+               </div>*/}
                 </div>
               </div>
-              <div className='w-full flex h-1/4 xl:-mt-[11.5vw] lg:-mt-[11.5vw]'>
+              <div className='w-full flex h-1/4 xl:-mt-[11.5vw] lg:-mt-[11.5vw] md:-mt-[14.5vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>
