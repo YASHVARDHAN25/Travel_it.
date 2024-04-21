@@ -22,7 +22,7 @@ function Landing() {
   const place = new String('LADAKH.');  
   const place1 = place.substring(0, place.length-1)
       return (
-        <>
+        <div>
         
         <div className='absolute'>
         <Swipes/>
@@ -94,8 +94,8 @@ function Landing() {
       </div>
     </div>
               </div>
-              <div className='flex justify-center items-end h-1/2 md:mt-[12vw] lg:mt-[6vw] sm:mt-[20vw]'>
-                <div className=' z-[990] bg-slate-100 sm:w-2/3 w-5/6 lg:h-[18vw] md:h-[20vw]  rounded-3xl shadow-2xl'>
+              <div className='flex justify-center items-end h-[275px] md:mt-[15vw] lg:mt-[4.5vw] sm:mt-[25vw] mt-[25vw]'>
+                <div className=' z-[990] bg-slate-100 sm:w-2/3 w-5/6 lg:h-[200px] md:h-[250px] h-[280px] rounded-3xl shadow-2xl'>
 
                 <div className='flex justify-center'>
                 <img className=' md:w-[12vw] w-[20vw] pt-3' src={img1}></img>
@@ -119,7 +119,7 @@ function Landing() {
                </div>*/}
                 </div>
               </div>
-              <div className='w-full flex h-1/4 xl:-mt-[11.5vw] lg:-mt-[11.5vw] md:-mt-[14.5vw]'>
+              <div className='w-full flex h-[150px] lg:-mt-[11.5vw] md:-mt-[17.5vw] sm:-mt-[22vw] -mt-[8vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>
@@ -152,7 +152,7 @@ function Landing() {
           </div>
           </div>  
         
-</>
+</div>
         )
       }
 export default Landing

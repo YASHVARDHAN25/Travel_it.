@@ -28,31 +28,30 @@ const Swipes = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className='h-screen'
       >
         <SwiperSlide>
-          <img src={s1} className='w-full h-full'/>
+          <img src={s1} />
         </SwiperSlide>
         <SwiperSlide >
-          <img src={s2} className='w-full h-full'/>
+          <img src={s2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s3} className='w-full h-full'/>
+          <img src={s3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s4} className='w-full h-full'/>
+          <img src={s4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s5} className='w-full h-full'/> 
+          <img src={s5} /> 
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s6} className='w-full h-full'/> 
+          <img src={s6} /> 
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s7} className='w-full h-full'/> 
+          <img src={s7} /> 
         </SwiperSlide>
         <SwiperSlide>
-          <img src={s8} className='w-full h-full'/> 
+          <img src={s8}/> 
         </SwiperSlide>
       </Swiper>
       
