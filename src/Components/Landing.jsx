@@ -29,7 +29,7 @@ function Landing() {
          </div>
         <div className='w-screen h-screen m-auto group'>   
       
-          <div className='w-full z-[990] h-screen bg-transparent pt-1 absolute'>
+          <div className='w-screen z-[990] h-screen bg-transparent pt-1 absolute'>
               <div className='textstructure xl:mt-[13vw] sm:mt-[15vw] mt-[25vw] px-[5.5vw]'>
               <div className='plan font-sans font-extrabold sm:text-[5vw] text-[10vw] text-[#1E1E1E70]'>Plan it to</div>
     <div className='wrapper mr-[2vw]'>
@@ -119,7 +119,7 @@ function Landing() {
                </div>*/}
                 </div>
               </div>
-              <div className='w-full flex h-[150px] lg:-mt-[11.5vw] md:-mt-[17.5vw] sm:-mt-[22vw] -mt-[8vw]'>
+              <div className='w-screen flex h-[150px] lg:-mt-[11.5vw] md:-mt-[17.5vw] sm:-mt-[22vw] -mt-[8vw]'>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>
