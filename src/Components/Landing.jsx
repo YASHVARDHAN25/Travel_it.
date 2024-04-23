@@ -33,7 +33,7 @@ function Landing() {
               <div className='textstructure xl:mt-[13vw] sm:mt-[15vw] mt-[25vw] px-[5.5vw]'>
               <div className='plan font-sans font-extrabold sm:text-[5vw] text-[10vw] text-[#1E1E1E70]'>Plan it to</div>
     <div className='wrapper mr-[2vw]'>
-      <div className='words font-sans -mt-[1.5vw] h-20 w-[80vw]'>
+      <div className='words font-sans -mt-[1.5vw] h-20 w-auto'>
       <Swiper spaceBetween={0} direction={'vertical'}
         autoplay={{
           delay: 3000,

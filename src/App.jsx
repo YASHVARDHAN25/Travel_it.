@@ -12,7 +12,7 @@ function App() {
 const locomotiveScroll = new LocomotiveScroll();
   const [count, setCount] = useState(0)
   return (
-    <div className='text-white w-screen h-screen overflow-x-hidden'>
+    <div className='text-white overflow-x-hidden'>
       <Navbar />
       <Landing />
       <Menu />
