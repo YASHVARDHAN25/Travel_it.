@@ -119,7 +119,7 @@ function Landing() {
                </div>*/}
                 </div>
               </div>
-              <div className='w-screen flex h-[150px] lg:-mt-[11.5vw] md:-mt-[17.5vw] sm:-mt-[22vw] -mt-[8vw]'>
+              <div className='w-screen flex h-[150px] lg:-mt-[11.5vw] md:-mt-[17.5vw] sm:-mt-[22vw] -mt-[8vw] '>
                 <Marquee>
                   <div className='text-[6vw] font-sans font-bold text-[#A4161A] pr-1 text-shadow-xl'>●</div>
                   <div className='text-[6vw] font-sans font-bold text-[#1E1E1E] pr-1 text-shadow-xl'>MUMBAI</div>
