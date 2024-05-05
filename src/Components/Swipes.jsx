@@ -19,8 +19,6 @@ import {Autoplay} from 'swiper/modules';
 
 const Swipes = () => {
   return (
-   
-
 <div className='w-screen h-screen'>
           <Swiper spaceBetween={0} centeredSlides={true}
         autoplay={{
