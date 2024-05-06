@@ -10,13 +10,8 @@ import s6 from '../assets/s6.jpg';
 import s7 from '../assets/s7.jpg';
 import s8 from '../assets/s8.jpg';
 
-// Import Swiper styles
 import './Landing.css';
-
-// import required modules
 import {Autoplay} from 'swiper/modules';
-
-
 const Swipes = () => {
   return (
 <div className='w-screen h-screen'>
