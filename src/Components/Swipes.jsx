@@ -46,7 +46,6 @@ const Swipes = () => {
           <img src={s8}/> 
         </SwiperSlide>
       </Swiper>
-      
  </div>
 
   )
